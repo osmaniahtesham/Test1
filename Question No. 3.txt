@@ -1,0 +1,1 @@
+SELECT Department.dname AS Department_Name , COUNT(employee.`EmpNo`) AS Number_Of_Employee FROM employee INNER JOIN Department ON employee.`DeptNo`=department.`DeptNo`;
