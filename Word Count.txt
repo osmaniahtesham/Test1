@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class WordCount {
+
+	public static void countWord(String s){
+		
+		String str1[]=s.split("\\?|\\.");
+		int maxlength = 0;
+		int length=str1.length;
+		for(String s1:str1)
+		{
+			String str2[]=s1.split(" ");
+			if(str2.length>=maxlength)
+			{
+				maxlength = str2.length;
+			}
+		}
+		System.out.println("maximum no of words :" +" " + maxlength);
+		}
+	
+	public static void main(String[] args) {
+		String s="My name is Ahtesham.I lives in pune?I have done computer engineering from pune.";
+       
+		WordCount.countWord(s);
+}
+}
